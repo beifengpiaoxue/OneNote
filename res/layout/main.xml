@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+
+        >
+    <RelativeLayout android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:background="#99cccc"
+            >
+        <Button
+                android:id="@+id/pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上一月"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:onClick="click"
+                android:textSize="20sp"
+                />
+        <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一月"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:onClick="click"
+                android:textSize="20sp"
+                />
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014年8月"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+        <GridView
+                  android:id="@+id/gridview"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:numColumns="7"
+                  ></GridView>
+    </RelativeLayout>
+</LinearLayout>
+
